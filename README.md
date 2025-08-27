@@ -4,9 +4,8 @@ This repository contains solutions to two machine learning tasks:
 
 1. **📧 Email Spam Classification using Naive Bayes**
 2. **🧠 Handwritten Digit Classification using a Fully Connected Neural Network (FCNN)**
-
-Each project demonstrates the application of machine learning techniques for real-world classification problems.
-
+3. **🌸Iris Flower Classification**
+4. **🏡California Housing Price Prediction** 
 ---
 
 # 📧 Task 1: Email Spam Classification using Naive Bayes
@@ -150,7 +149,36 @@ Training data shape: (60000, 28, 28)
 Test data shape: (10000, 28, 28)
 Test Accuracy: 0.9803
 ```
+# 🌸 Task 3: Iris Flower Classification 
+- **Objective**: Classify iris flowers into three species (`setosa`, `versicolor`, `virginica`) based on sepal length/width and petal length/width.
+- **Dataset**: [Iris dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-dataset) (available in `sklearn`).
+- **Algorithm Used**: Logistic Regression
+- **Steps**:
+  - Load and explore dataset  
+  - Preprocess features and target  
+  - Train/test split (80/20)  
+  - Train Logistic Regression model  
+  - Evaluate with accuracy & classification report  
+  - Make predictions on new flower samples  
 
+✅ Achieved **100% accuracy** on test data.  
+
+---
+
+# 🏡 Task 4: California Housing Price Prediction 
+- **Objective**: Predict median house values in California districts using features such as median income, average rooms, population, latitude, and longitude.
+- **Dataset**: [California Housing dataset](https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset) (available in `sklearn`).
+- **Algorithm Used**: Linear Regression
+- **Steps**:
+  - Load dataset  
+  - Data cleaning (check missing values)  
+  - Select important features  
+  - Train/test split (80/20)  
+  - Train Linear Regression model  
+  - Evaluate with Mean Squared Error (MSE) and R² score  
+  - Compare predicted vs. actual prices  
+
+✅ Achieved **~57% R² Score** (baseline model).  
 ## 📜 License
 
 This project is open-source and available under the **MIT License**.
